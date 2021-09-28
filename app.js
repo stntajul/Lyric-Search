@@ -7,9 +7,9 @@ function getLyric(id){
     .then(response=>response.json())
     .then(data=>{
         const lyricShow=document.getElementById('lyric');
-        const a=document.createElement('a');
-        a.innerHTML=`<a>${data.lyrics}</a>`;
-        lyricShow.appendChild(a);
+        const p=document.createElement('p');
+        p.innerHTML=`<pre>${data.lyrics}</pre>`;
+        lyricShow.appendChild(p);
         console.log(data.lyrics);
         
     })
