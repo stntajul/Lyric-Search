@@ -38,7 +38,7 @@ searchBtn.addEventListener('click',function(){
             album[i]=element.album;
             const p=document.createElement('p');
         p.innerHTML=`
-        <p>${title[i]}" || " ${artist[i]}"  <button onclick="getLyric(${i})" id="${i}" class="btn btn-success">GetLyrics</button></p>`;
+        <p>${title[i]} ||  ${artist[i]}  <button onclick="getLyric(${i})" id="${i}" class="btn btn-success">GetLyrics</button></p>`;
         searchResultArea.appendChild(p);
        
         }
